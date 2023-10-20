@@ -1,14 +1,17 @@
 \documentclass[letterpaper,12pt, titlepage]{article}
 \input{config/packages}
+\input{config/definitios}
 \begin{document}
 % Portada
-\include{general/front}
+\include{general/01_FrontPage}
 % Introducción
-\include{general/introduction}
+\include{general/02_Introduction}
 % Objetivos
-\include{general/objetives}
+\include{general/03_Objetives}
+%Ejercicios
+\input{exercises/exercise1.tex}
 % Conclusiones
-\include{general/conclusions}
+\include{general/04_Conclusions}
 % Bibliografía
 \nocite{*}
 \printbibliography[heading=bibintoc, title={Referencias Bibliogr\'aficas}] 
