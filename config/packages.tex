@@ -1,6 +1,9 @@
 \usepackage[T1]{fontenc}
 \usepackage[margin=1in]{geometry}
-\usepackage[backend=biber, style=alphabetic, sorting=ynt]{biblatex}
+\usepackage{setspace}
+% Para bibliografía
+\usepackage{csquotes}
+\usepackage[backend=biber, style=authoryear, sorting=ynt, mergedate=compact]{biblatex}
 % Para nombres en español
 \usepackage[spanish]{babel}
 % para los incluir imagenes
@@ -15,8 +18,6 @@
 % Para los enlaces y resaltar
 \usepackage[framemethod=tikz]{mdframed}
 \usepackage[colorlinks=true,backref=none,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
-% Para los indentados al iniciar las secciones
-\usepackage[skip=10pt plus1pt, indent=0pt]{parskip}
 % Para configurar las tablas
 \usepackage[justification=centering]{caption}
 \usepackage{array}
