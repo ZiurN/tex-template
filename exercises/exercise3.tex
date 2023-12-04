@@ -1,12 +1,24 @@
 \section*{Regresión y correlación entre variables cuantitativas}
 \addcontentsline{toc}{section}{Regresión y correlación entre variables cuantitativas}
-\begin{quotation}
-    \emph{\textcolor{gray}{Identificar dos variables cuantitativas de la situación estudiada que puedan estar relacionadas y:}}
-    \begin{enumerate}
-        \item  \emph{\textcolor{gray}{Realizar el diagrama de dispersión de dichas variables y determinar el tipo de asociación entre las variables.}}
-        \item  \emph{\textcolor{gray}{Encontrar el modelo matemático que permite predecir el efecto de una variable sobre la otra. ¿Es confiable?}}
-        \item  \emph{\textcolor{gray}{Determinar el grado de relación de las dos variables.}}
-        \item  \emph{\textcolor{gray}{Relacionar la información obtenida con el problema.}}
-    \end{enumerate}
-\end{quotation}
-Esta actividad está a cargo de Jeferson.
+Para el desarrollo de esta actividad, se toma como variable independiente la \textbf{\emph{Edad del conductor}}, como variable dependiente la \textbf{\emph{Velocidad del vehículo}}.\par
+En la figura \ref{fig:scatterPlotExercise} se muestra la gráfica de dispersión de la \emph{velocidad del vehículo} en relación con la \emph{edad del conductor}.
+\begin{figure}[!ht]
+    \centering
+    \include{img/scatterPlotExercise}
+    \caption{\footnotesize{Diagrama de dispersión de la velocidad del vehículo en relación a la edad del conductor.}}
+    \label{fig:scatterPlotExercise}
+\end{figure}
+De acuerdo al diagrama de dispersión, se deduce que la relación entre la \emph{velocidad del vehículo} en relación con la \emph{edad del conductor} es \textbf{lineal positiva}.
+Al realizar el análisis realizado en Excel con los datos, el \textbf{coeficiente de determinación es igual a $R^{2}=0.6133$}. El \textbf{coeficiente de correlación es igual a $R=0.783$}\footnote[1]{Aquí, una vez más, el valor de $R$ se determina no sólo con el cálculo de la raíz cuadrada del valor del coeficiente de determinación $R^{2}$, sino de la relación observada en la gráfica \ref{fig:scatterPlotExercise}}. Para estos datos el modelo de regresión lineal encontrado para la relación entre la edad del conductor $t$ y la velocidad del vehículo $v$ es
+\begin{equation}
+    \label{eq:modelo1}
+    v(t) = 0.8996\cdot t + 21.843
+\end{equation}
+Este modelo no tiene una gran confianza, ya que la correlación se puede considerar \emph{regular} ya que el coeficiente de determinación en su versión porcentual es de $61.33\%$. En la figura \ref{fig:scatterPlotExerciseb} se puede apreciar la recta de regresión obtenida a partir de los datos entregados, junto con los valores de dispersión correspondientes.\par
+\begin{figure}[!ht]
+    \centering
+    \include{img/scatterPlotExerciseb}
+    \caption{\footnotesize{Diagrama de dispersión de la temperatura en función de la frecuencia cardiaca junto a la recta aproximada resultado de la regresión lineal aplicada.}}
+    \label{fig:scatterPlotExerciseb}
+\end{figure}
+Para relacionar estos resultados con la problemática de accidentalidad en Colombia, hay que tener en cuenta que cada par de datos $(t, v(t))$ es parte de otro conjunto de datos relacionados a un tipo de accidente particular, por lo que las relaciones encontradas entre la edad del conductor y la velocidad pueden indicar algo como que se necesita que el conductor sea más joven para que un accidente pueda ocurrir a menor velocidad. Esto puede tener sentido, ya que los conductores jovenes son inexpertos y generar accidentes más facilmente por otros factores diferentes al exceso de velocidad, como falta de atención, exceso de confianza causado por la misma edad e inmadurez mental, o temor a realizar algunas maniobras. Los conductores mayores por otra parte pueden evitar estos problemas, y los accidentes relacionados a conductores mayores pueden deberse más a exceso de velocidad por una combinación de exceso de confianza por acostumbramiento, con perdida de reflejos, o de visión y audición por la edad.
