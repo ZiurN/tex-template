@@ -1,0 +1,16 @@
+{\footnotesize
+\begin{tikzpicture}
+    \begin{axis}[
+        width=.8\linewidth,
+        title={Relación entre la edad del conductor y la velocidad del vehículo},
+        grid style={line width=.1pt, draw=gray!10},
+        xminorgrids=true,
+        yminorgrids=true,
+        minor tick num=5,
+        enlargelimits=true,
+        xlabel=Edad del conductor (Años),
+        ylabel=Velocidad del vehículo ($\frac{km}{h}$)
+    ]
+    \addplot[only marks,  mark=o] table{assets/scatterPlotExercise.dat};
+    \end{axis}
+\end{tikzpicture}}
