@@ -3,6 +3,7 @@
     \begin{tikzpicture}
         \begin{axis}[
             xlabel={Número de Lesionados},
+            ylabel={Frecuencia},
             minor tick num=0,
             xtick = {0,1,2,3,4,5,6},
             xmin=-1, xmax=7,
@@ -10,6 +11,8 @@
             bar width=15pt,
             ymajorgrids,
             enlargelimits=0.05,
+            nodes near coords,
+            nodes near coords align={vertical},
           ]
           \addplot [ybar, fill=chartColor5, draw=none] table {./assets/numeroLesionados.dat};
         \end{axis}
