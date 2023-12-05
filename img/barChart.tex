@@ -1,0 +1,25 @@
+\scriptsize{
+\begin{tikzpicture}
+    \begin{axis}[
+                bar width=10pt,
+                enlargelimits=0.05,
+                ymajorgrids,
+                ymax=25,
+                ymin=10,
+                ylabel={Número de accidentes de tránsito},
+                symbolic x coords={Sin educación, Primaria completa, Secundaria completa, Técnico/Tecnólogo, Universitaria, Posgrado},
+                xtick={Sin educación, Primaria completa, Secundaria completa, Técnico/Tecnólogo, Universitaria, Posgrado},
+                xticklabel style={rotate=45,anchor=north east},
+                xtick align=inside,
+                nodes near coords,
+                nodes near coords align={vertical},
+            ]
+    \addplot[ybar, fill=chartColor0, draw=myGray] coordinates {(Sin educación, 18)};
+    \addplot[ybar, fill=chartColor1, draw=none] coordinates {(Primaria completa, 12)};
+    \addplot[ybar, fill=chartColor2, draw=none] coordinates {(Secundaria completa, 24)};
+    \addplot[ybar, fill=chartColor3, draw=none] coordinates {(Técnico/Tecnólogo, 15)};
+    \addplot[ybar, fill=chartColor4, draw=none] coordinates {(Universitaria, 18)};
+    \addplot[ybar, fill=chartColor5, draw=none] coordinates {(Posgrado, 13)};
+    \end{axis}
+\end{tikzpicture}
+}

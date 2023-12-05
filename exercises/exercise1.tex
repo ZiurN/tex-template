@@ -1,7 +1,74 @@
 \section*{Caracterización de variables cualitativas}
 \addcontentsline{toc}{section}{Caracterización de variables cualitativas}
-\begin{quotation}\emph{\textcolor{gray}{
-    Caracterizar una de las variables cualitativas elegidas presentando: tabla de frecuencias, diagrama de barras o circular, moda, tabla de contingencias y conclusiones.}}\par
-    \emph{\textcolor{gray}{Realizar una tabla de contingencias con las dos variables cualitativas seleccionadas.}}
-\end{quotation}
-Esta actividad está a cargo de Milena.
+Para la primera parte del análisis se selecciona la variable cualitativa \emph{Nivel educativo}. En la tabla \ref{tab:tablaFrecuentasVariableCualitativa} se entregan las frecuencias asociadas a la variable seleccionada.\par
+\begin{table}[!htbp]
+    \begin{footnotesize}
+    \centering
+    \begin{tabular}{lccc}
+        \toprule
+        \multicolumn{1}{c}{\textbf{Categorías}} & \multicolumn{1}{c}{\textbf{Frecuencia absoluta}} & \multicolumn{1}{c}{\textbf{Frecuencia relativa}} & \multicolumn{1}{c}{\textbf{Frecuencia porcentual}}\\
+        \midrule
+        Sin educación & 18 & 0.18 & 18\% \\
+        \midrule
+        Primaria completa & 12 & 0.12 & 12\% \\
+        \midrule
+        Secundaria completa & 24 & 0.24 & 24\% \\
+        \midrule
+        Técnico/Tecnólogo & 15 & 0.15 & 15\% \\
+        \midrule
+        Universitaria & 18 & 0.18 & 18\% \\
+        \midrule
+        Posgrado & 13 & 0.13 & 13\% \\
+        \toprule
+        \rowcolor{myGray}
+        \textbf{Totales} & \textbf{100} & \textbf{1.00} & \textbf{100\%} \\
+        \bottomrule
+    \end{tabular}
+    \caption{\footnotesize{Tabla de frecuencias para la variable \emph{Nivel educativo}.}}
+    \label{tab:tablaFrecuentasVariableCualitativa}
+    \end{footnotesize}
+\end{table}
+En la figura \ref{fig:graficasVariableCualitativa} se presentan el gráfico de barras y el diagrama circular para la variable \emph{El tipo de vehículo}.\par
+\vspace{1em}
+\begin{figure}[!ht]
+    \centering
+    \noindent\parbox[][][c]{.55\linewidth}{
+        \input{img/barChart}
+    }
+    \parbox[][][c]{.4\linewidth}{
+        \input{img/pieChart}
+    }\par
+    \caption{\footnotesize{Diagrama de barras y circular para las frecuencias de la variable \emph{Nivel educativo}.}}
+    \label{fig:graficasVariableCualitativa}
+\end{figure}
+\begin{mdframed}[hidealllines=true,backgroundcolor=myGray,skipabove=5pt]
+    La moda para el \emph{Nivel educativo} es \emph{Secundaria completa} con un valor de $24$.
+\end{mdframed}
+\begin{table}[!htbp]
+    \centering
+    \begin{footnotesize}
+    \begin{tabular}{ l x{0.1\linewidth} x{0.1\linewidth} y{0.07\linewidth} }
+        \toprule
+        {} & \multicolumn{2}{c}{\textbf{Sexo del conductor}} & {} \\ \cline{2-3}
+        \multirow{-2}{*}{\textbf{\begin{tabular}{c}Nivel\\educativo\end{tabular}}} & \emph{\begin{tabular}{c}Femenino\end{tabular}} & \emph{\begin{tabular}{c}Masculino\end{tabular}} & \multirow{-2}{*}{\cellcolor{myGray}\textbf{Totales}}\\
+        \bottomrule
+        Sin educación & 6 & 12 & \textbf{18} \\
+        \midrule
+        Primaria completa & 8 & 4 & \textbf{12} \\
+        \midrule
+        Secundaria completa & 9 & 15 & \textbf{24} \\
+        \midrule
+        Técnico\/Tecnólogo & 4 & 11 & \textbf{15} \\
+        \midrule
+        Universitaria & 6 & 12 & \textbf{18} \\
+        \midrule
+        Posgrado & 4 & 9 & \textbf{13} \\
+        \toprule
+        \rowcolor{myGray}
+        \textbf{Totales} & \textbf{37} & \textbf{63} & \textbf{100}\\
+        \bottomrule
+        \end{tabular}
+    \caption{\footnotesize{Tabla de contingencia de las variables \emph{Nivel educativo} y \emph{Sexo del conductor}.}}
+    \label{tab:tablaContingencia}
+    \end{footnotesize}
+\end{table}

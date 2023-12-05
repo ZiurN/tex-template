@@ -1,0 +1,18 @@
+\scriptsize{
+    \pgfplotsset{every x tick label/.append style={font=\tiny}}
+    \begin{tikzpicture}
+        \begin{axis}[
+            xlabel={Número de Ocupantes},
+            minor tick num=5,
+            xtick = {1, 2, 3, 4, 5, 6, 8},
+            xmin=0, xmax=9,
+            ymin=1.5, ymax=35,
+            bar width=15pt,
+            ymajorgrids,
+            enlargelimits=0.05,
+            yminorgrids=true,
+          ]
+          \addplot [ybar, fill=chartColor5, draw=none] table {./assets/numeroOcupantes.dat};
+        \end{axis}
+    \end{tikzpicture}
+}

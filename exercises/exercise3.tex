@@ -10,10 +10,9 @@ En la figura \ref{fig:scatterPlotExercise} se muestra la gráfica de dispersión
 \end{figure}
 De acuerdo al diagrama de dispersión, se deduce que la relación entre la \emph{velocidad del vehículo} en relación con la \emph{edad del conductor} es \textbf{lineal positiva}.
 Al realizar el análisis realizado en Excel con los datos, el \textbf{coeficiente de determinación es igual a $R^{2}=0.6133$}. El \textbf{coeficiente de correlación es igual a $R=0.783$}\footnote[1]{Aquí, una vez más, el valor de $R$ se determina no sólo con el cálculo de la raíz cuadrada del valor del coeficiente de determinación $R^{2}$, sino de la relación observada en la gráfica \ref{fig:scatterPlotExercise}}. Para estos datos el modelo de regresión lineal encontrado para la relación entre la edad del conductor $t$ y la velocidad del vehículo $v$ es
-\begin{equation}
-    \label{eq:modelo1}
+\begin{equation*}
     v(t) = 0.8996\cdot t + 21.843
-\end{equation}
+\end{equation*}
 Este modelo no tiene una gran confianza, ya que la correlación se puede considerar \emph{regular} ya que el coeficiente de determinación en su versión porcentual es de $61.33\%$. En la figura \ref{fig:scatterPlotExerciseb} se puede apreciar la recta de regresión obtenida a partir de los datos entregados, junto con los valores de dispersión correspondientes.\par
 \begin{figure}[!ht]
     \centering
@@ -21,4 +20,3 @@ Este modelo no tiene una gran confianza, ya que la correlación se puede conside
     \caption{\footnotesize{Diagrama de dispersión de la temperatura en función de la frecuencia cardiaca junto a la recta aproximada resultado de la regresión lineal aplicada.}}
     \label{fig:scatterPlotExerciseb}
 \end{figure}
-Para relacionar estos resultados con la problemática de accidentalidad en Colombia, hay que tener en cuenta que cada par de datos $(t, v(t))$ es parte de otro conjunto de datos relacionados a un tipo de accidente particular, por lo que las relaciones encontradas entre la edad del conductor y la velocidad pueden indicar algo como que se necesita que el conductor sea más joven para que un accidente pueda ocurrir a menor velocidad. Esto puede tener sentido, ya que los conductores jovenes son inexpertos y generar accidentes más facilmente por otros factores diferentes al exceso de velocidad, como falta de atención, exceso de confianza causado por la misma edad e inmadurez mental, o temor a realizar algunas maniobras. Los conductores mayores por otra parte pueden evitar estos problemas, y los accidentes relacionados a conductores mayores pueden deberse más a exceso de velocidad por una combinación de exceso de confianza por acostumbramiento, con perdida de reflejos, o de visión y audición por la edad.
